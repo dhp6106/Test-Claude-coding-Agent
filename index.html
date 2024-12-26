@@ -7,10 +7,31 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        main {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f0f0f0;
         }
         h1 {
             color: #333;
@@ -22,10 +43,39 @@
             line-height: 1.6;
             color: #444;
         }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Test Page</h1>
-    <p>This is a simple test page to demonstrate GitHub workflows.</p>
+    <header>
+        <h1>Welcome to My Test Page</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>About This Project</h2>
+        <p>This page demonstrates GitHub workflows and web development practices. We're using this project to show how to:</p>
+        <ul>
+            <li>Create and manage GitHub repositories</li>
+            <li>Work with branches and pull requests</li>
+            <li>Implement basic web design principles</li>
+        </ul>
+        <p>Feel free to explore the navigation and discover more about our project!</p>
+    </main>
+    <footer>
+        <p>Contact us: example@email.com | Phone: (555) 123-4567</p>
+        <p>&copy; 2024 Test Project. All rights reserved.</p>
+    </footer>
 </body>
 </html>
